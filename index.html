@@ -148,29 +148,19 @@
           </div>
           <div>
             <label class="form__label" for="lastName">Last Name</label>
-            <input
-              class="form__input"
-              id="lastName"
-              type="text"
-              placeholder="Enter last name"
-            />
+            <input class="form__input" id="lastName" type="text" />
           </div>
           <div>
             <label class="form__label" for="gender">Gender</label>
-            <select class="form__select" id="gender" placehoder="select here">
-              <option disabled selected>select here</option>
-              <option>Male</option>
-              <option>Female</option>
+            <select id="gender" class="form__select">
+              <option class="form__option" disabled selected>Gender</option>
+              <option class="form__option">Male</option>
+              <option class="form__option">Female</option>
             </select>
           </div>
           <div>
             <label class="form__label" for="DOB">Date of Birth</label>
-            <input
-              class="form__input"
-              type="date"
-              id="DOB"
-              placeholder="select here"
-            />
+            <input class="form__date" type="date" id="DOB" />
           </div>
           <div>
             <label class="form__label" for="weight">Weight(KG)</label>
@@ -186,13 +176,20 @@
           </div>
           <div>
             <label class="form__label" for="level">Activity Level</label>
-            <select class="form__select" id="level">
-              <option>Select here</option>
+            <select id="level" class="form__select">
+              <option disabled selected class="form__option">
+                Select here
+              </option>
+              <option>Level 1</option>
+              <option>Level 2</option>
+              <option>Level 3</option>
             </select>
           </div>
-          <label class="form__label" for="password">Password</label>
-          <input class="form__input" type="password" />
-          <div class="btn"><button>Register</button></div>
+          <div>
+            <label class="form__label" for="password">Password</label>
+            <input class="form__input" type="password" required />
+          </div>
+          <button class="btn">Register</button>
         </form>
         <div class="form__terms">
           By clicking Register, you agree to our
