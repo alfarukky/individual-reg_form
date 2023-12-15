@@ -38,17 +38,27 @@ body {
   margin-bottom: 0.7rem;
 }
 
-.header__text {
+.header__text--1,
+.header__text--2 {
   font-size: 1.6rem;
   line-height: 2.5rem;
   font-weight: 300;
   padding-right: 2.5rem;
   margin-bottom: 2.8rem;
 }
+.header__text--2 {
+  display: none;
+}
+
+.header .container {
+  display: grid;
+  justify-content: flex-end;
+  align-content: center;
+  gap: 1.5rem;
+}
 
 .form {
   background: var(--color-background);
-
   padding: 2rem;
   border-radius: 10px;
 }
@@ -78,7 +88,7 @@ body {
 .form__select {
   display: inline-block;
   width: 100%;
-  padding: 1rem 0 1rem 2rem;
+  padding: 1rem 0;
   transition: all 0.3s;
 }
 
@@ -89,7 +99,9 @@ body {
   border: 2px solid var(--color-btn);
   box-shadow: 0 0.3rem 0.2rem rgba(0, 0, 0, 0.1);
 }
-
+.form__input:focus {
+  padding: 1rem 0 1rem 2rem;
+}
 .form__select {
   padding-left: 1rem;
   font-weight: 300;
@@ -108,8 +120,7 @@ body {
 }
 
 .form__terms {
-  margin-top: 2rem;
-  text-align: center;
+  margin: 2rem 0 0 2.5rem;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 2.5rem;
@@ -140,4 +151,52 @@ body {
 .btn:active {
   cursor: pointer;
   transform: translateY(-3px);
+}
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 765px) {
+  .grid--1X2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header,
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header {
+    padding: 13rem;
+  }
+  .form-section {
+    margin-top: 10rem;
+  }
+  .form-section {
+    width: 43rem;
+  }
+  .form-control {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .form-control .form__date,
+  .form-control .form__select {
+    width: 17rem;
+  }
+  .form__terms {
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+    margin: -3rem;
+    text-align: center;
+  }
+  .header__text--1 {
+    display: none;
+  }
+  .header__text--2 {
+    display: block;
+  }
 }
