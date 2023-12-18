@@ -24,8 +24,8 @@ Individual sign up form to Improve wellness your wellness and increase productiv
 
 ### Built with
 
-- **Semantic HTML5 **
-- **CSS custom **
+- **Semantic HTML5**
+- **CSS custom**
 - **Flexbox**
 - **CSS Grid**
 
