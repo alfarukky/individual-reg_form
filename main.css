@@ -102,6 +102,22 @@ body {
 .form__input:focus {
   padding: 1rem 0 1rem 2rem;
 }
+.password-icon {
+  position: absolute;
+  right: 4.3rem;
+  top: 77.8rem;
+}
+
+@media screen and (min-width: 342px) {
+  .password-icon {
+    top: 75.5rem;
+  }
+}
+@media screen and (min-width: 618px) {
+  .password-icon {
+    top: 73rem;
+  }
+}
 .form__select {
   padding-left: 1rem;
   font-weight: 300;
@@ -198,5 +214,31 @@ body {
   }
   .header__text--2 {
     display: block;
+  }
+}
+@media screen and (min-width: 763px) {
+  .password-icon {
+    top: 46rem;
+    left: 80rem;
+  }
+  @media screen and (min-width: 800px) {
+    .password-icon {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1020px) {
+    .password-icon {
+      left: 90rem;
+    }
+  }
+  @media screen and (min-width: 1438px) {
+    .password-icon {
+      left: 110rem;
+    }
+  }
+  @media screen and (min-width: 1460px) {
+    .password-icon {
+      display: none;
+    }
   }
 }

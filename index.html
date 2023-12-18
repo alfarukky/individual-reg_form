@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="main.css" />
     <title>Individual registration form</title>
   </head>
@@ -202,7 +206,10 @@
             </div>
             <div>
               <label class="form__label" for="password">Password</label>
-              <input class="form__input" type="password" required />
+              <div class="wrapper">
+                <span class="password-icon"><i class="fa fa-eye"></i></span>
+                <input class="form__input" type="password" required />
+              </div>
             </div>
             <button class="btn">Register</button>
           </form>
