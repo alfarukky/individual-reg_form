@@ -221,9 +221,9 @@ body {
     top: 46rem;
     left: 80rem;
   }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 882px) {
     .password-icon {
-      display: none;
+      left: 83rem;
     }
   }
   @media screen and (min-width: 1020px) {
@@ -231,12 +231,17 @@ body {
       left: 90rem;
     }
   }
-  @media screen and (min-width: 1438px) {
+  @media screen and (min-width: 1192px) {
     .password-icon {
-      left: 110rem;
+      left: 98rem;
     }
   }
-  @media screen and (min-width: 1460px) {
+  @media screen and (min-width: 1302px) {
+    .password-icon {
+      left: 105rem;
+    }
+  }
+  @media screen and (min-width: 1374px) {
     .password-icon {
       display: none;
     }
